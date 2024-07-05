@@ -8,12 +8,12 @@ import { getFirestore } from 'firebase/firestore/lite';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyChDN3XN_TfygZCL9lkVGM__zhXO_W-yy0',
-  authDomain: 'react-cursos-e12c4.firebaseapp.com',
-  projectId: 'react-cursos-e12c4',
-  storageBucket: 'react-cursos-e12c4.appspot.com',
-  messagingSenderId: '523969421414',
-  appId: '1:523969421414:web:f3707659ee85d448fb8da7',
+  apiKey: import.meta.env.VITE_FB_GOOGLE_API_KEY,
+  authDomain: import.meta.env.VITE_FB_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FB_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FB_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FB_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FB_APP_ID,
 };
 
 // Initialize Firebase

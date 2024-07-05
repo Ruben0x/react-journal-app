@@ -75,6 +75,7 @@ export const NoteView = () => {
       <Grid item>
         <input
           type='file'
+          accept='image/png, image/jpeg'
           multiple
           ref={fileInputRef}
           onChange={onFileInputChange}
